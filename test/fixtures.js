@@ -32,3 +32,29 @@ export const testUsers = [
     password: "secret",
   },
 ];
+
+export const testCandidates = [
+  {
+    firstName: "Lisa",
+    lastName: "Simpson",
+  },
+  {
+    firstName: "Maggie",
+    lastName: "Simpson",
+  },
+];
+
+export const testDonations = [
+  {
+    amount: 90,
+    method: "cash",
+  },
+  {
+    amount: 80,
+    method: "cash",
+  },
+  {
+    amount: 50,
+    method: "paypal",
+  },
+];

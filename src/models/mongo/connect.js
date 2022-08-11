@@ -3,6 +3,8 @@ import Mongoose from "mongoose";
 
 import * as seeder from "mais-mongoose-seeder";
 import { seedData } from "./seed-data.js";
+import { Candidate } from "./candidate.js";
+import { Donation } from "./donation.js";
 
 const seedLib = seeder.default;
 

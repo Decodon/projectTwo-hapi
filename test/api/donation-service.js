@@ -37,4 +37,19 @@ export const donationService = {
   async clearAuth() {
     axios.defaults.headers.common.Authorization = "";
   },
+
+  async makeDonation(id, donation) {
+    const response = await axios.post(`${this.donationUrl}/api/candidates/${id}/donations`, donation);
+    return response.data;
+  },
+
+  async getDonations(id) {
+    const response = await axios.get(`${this.donationUrl}/api/candidates/${id}/donations`);
+    return response.data;
+  },
+
+  async createCandidate(newCandidate) {
+    const response = await axios.post(`${this.donationUrl}/api/candidates`, newCandidate);
+    return response.data;
+  },
 };
