@@ -1,5 +1,6 @@
 import { accountsController } from "./controllers/accounts-controller.js";
 import { donationsController } from "./controllers/donations-controller.js";
+import { placemarkersController } from "./controllers/placemarkers-controller.js";
 
 export const webRoutes = [
   { method: "GET", path: "/", config: accountsController.index },
@@ -12,6 +13,10 @@ export const webRoutes = [
   { method: "GET", path: "/donate", config: donationsController.index },
   { method: "POST", path: "/donate", config: donationsController.donate },
   { method: "GET", path: "/report", config: donationsController.report },
+
+  { method: "GET", path: "/placemarkers", config: placemarkersController.index },
+  { method: "POST", path: "/placemarkers", config: placemarkersController.placemarkers },
+  { method: "GET", path: "/report", config: placemarkersController.report },
 
   {
     method: "GET",

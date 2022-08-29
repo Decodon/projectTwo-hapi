@@ -1,6 +1,6 @@
 import { db } from "../models/db.js";
 
-export const placemarkerController = {
+export const placemarkersController = {
   index: {
     handler: async function (request, h) {
       const candidates = await db.countiesStore.getAllCounties();
