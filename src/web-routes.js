@@ -16,7 +16,7 @@ export const webRoutes = [
 
   { method: "GET", path: "/placemarkers", config: placemarkersController.index },
   { method: "POST", path: "/placemarkers", config: placemarkersController.placemarkers },
-  { method: "GET", path: "/report", config: placemarkersController.report },
+  // { method: "GET", path: "/report", config: placemarkersController.report },
 
   {
     method: "GET",

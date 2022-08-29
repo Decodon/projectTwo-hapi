@@ -21,7 +21,7 @@ export const placemarkersApi = {
     },
   },
 
-  makeDonation: {
+  makePlacemarkers: {
     auth: {
       strategy: "jwt",
     },
@@ -30,8 +30,8 @@ export const placemarkersApi = {
       if (!counties) {
         return Boom.notFound("No Counties with this id");
       }
-      const donation = await db.placemarkerstore.donate(request.payload.amount, request.payload.method, request.auth.credentials, counties);
-      return donation;
+      const placemarkers = await db.placemarkerstore.placemarkers(request.payload.amount, request.payload.method, request.auth.credentials, counties);
+      return placemarkers;
     },
   },
 

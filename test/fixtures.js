@@ -44,6 +44,17 @@ export const testCandidates = [
   },
 ];
 
+export const testCounties = [
+  {
+    name: "Cork",
+    province: "Munster",
+  },
+  {
+    name: "Dublin",
+    province: "Leinster",
+  },
+];
+
 export const testDonations = [
   {
     amount: 90,
