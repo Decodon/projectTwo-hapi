@@ -1,0 +1,30 @@
+<div class="box">
+    <p> Make a donation here</p>
+</div><form action="/placemarkers" method="POST">
+    <div class="field">
+        <label class="label">Enter Latitude</label> <input class="input" type="number" placeholder="Latitude" name="latitude">
+        <label class="label">Enter Longitude</label> <input class="input" type="number" placeholder="Longitude" name="longitude">
+    </div>
+    <div class="field">
+        <div class="control">
+            <input class="radio" type="radio" name="religion" value="paypal"> Paypal
+            <input class="radio" type="radio" name="religion" value="cash"> Cash
+            <input class="radio" type="radio" name="religion" value="paypal"> Paypal
+            <input class="radio" type="radio" name="religion" value="cash"> Cash
+        </div>
+    </div>
+    <div class="field">
+        <div class="select">
+            <select name="counties">
+                {{#each counties}}
+                    <option> {{name}}</option>
+                {{/each}}
+            </select>
+        </div>
+    </div>
+    <div class="field">
+        <div class="control">
+            <button class="button is-link is-light">Placemarker</button>
+        </div>
+    </div>
+</form>

@@ -29,7 +29,7 @@ export const apiRoutes = [
   { method: "DELETE", path: "/api/counties", config: countiesApi.deleteAll },
 
   { method: "GET", path: "/api/placemarkers", config: placemarkersApi.findAll },
-  { method: "GET", path: "/api/counties/{id}/placemarkers", config: placemarkersApi.findByCandidate },
-  { method: "POST", path: "/api/counties/{id}/placemarkers", config: placemarkersApi.makeDonation },
+  { method: "GET", path: "/api/counties/{id}/placemarkers", config: placemarkersApi.findByCounties },
+  { method: "POST", path: "/api/counties/{id}/placemarkers", config: placemarkersApi.makePlacemarkers },
   { method: "DELETE", path: "/api/placemarkers", config: placemarkersApi.deleteAll },
 ];

@@ -1,4 +1,4 @@
-import { Placemarkers } from "./placemarker.js";
+import { Placemarkers } from "./placemarkers.js";
 
 export const placemarkersMongoStore = {
   async getAllPlacemarkers() {
@@ -11,8 +11,8 @@ export const placemarkersMongoStore = {
     return placemarkers;
   },
 
-  async placemarkers(amount, method, donor, candidate) {
-    const newDonation = new Donation({
+  async placemarkers(latitude, longitude, religion, explorer, counties) {
+    const newPlacemarkers = new Placemarkers({
       latitude,
       longitude,
       religion,

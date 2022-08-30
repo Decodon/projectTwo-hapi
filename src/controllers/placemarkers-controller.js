@@ -3,8 +3,8 @@ import { db } from "../models/db.js";
 export const placemarkersController = {
   index: {
     handler: async function (request, h) {
-      const candidates = await db.countiesStore.getAllCounties();
-      return h.view("Placemarker", { title: "Enter a Placemarker", counties: counties });
+      const counties = await db.countiesStore.getAllCounties();
+      return h.view("Placemarkers", { title: "Enter a Placemarker", counties: counties });
     },
   },
   report: {
@@ -22,10 +22,12 @@ export const placemarkersController = {
         const loggedInUser = request.auth.credentials;
         const rawCounties = request.payload.counties.split(",");
         const counties = await db.countiesStore.findByName(rawCounties[0], rawCounties[1]);
-        await db.placemarkersStore.placemarkers(request.payload.amount, request.payload.method, loggedInUser._id, counties._id);
+        await db.placemarkersStore.placemarkers(request.payload.latitude, request.payload.longitude, request.payload.religion, loggedInUser._id, counties._id);
         return h.redirect("/report");
       } catch (err) {
+        console.log(err.message);
         return h.view("main", { errors: [{ message: err.message }] });
+        console.log(err);
       }
     },
   },

@@ -12,7 +12,7 @@ export const webRoutes = [
 
   { method: "GET", path: "/donate", config: donationsController.index },
   { method: "POST", path: "/donate", config: donationsController.donate },
-  { method: "GET", path: "/report", config: donationsController.report },
+  { method: "GET", path: "/report", config: placemarkersController.report },
 
   { method: "GET", path: "/placemarkers", config: placemarkersController.index },
   { method: "POST", path: "/placemarkers", config: placemarkersController.placemarkers },

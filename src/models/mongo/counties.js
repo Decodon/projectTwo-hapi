@@ -4,7 +4,6 @@ const { Schema } = Mongoose;
 
 const countiesSchema = Schema({
   name: String,
-  lastName: String,
   province: String,
 });
 

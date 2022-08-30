@@ -16,4 +16,4 @@ const placemarkersSchema = new Schema({
   },
 });
 
-export const Placemarkers = Mongoose.model("Placemarkers", PlacemarkersSchema);
+export const Placemarkers = Mongoose.model("Placemarkers", placemarkersSchema);

@@ -20,6 +20,7 @@ export const seedData = {
       password: "secret",
     },
   },
+
   candidates: {
     _model: "Candidate",
     lisa: {
@@ -55,154 +56,157 @@ export const seedData = {
       candidate: "->candidates.donald",
     },
   },
-  //   counties: {
-  //     _model: "County",
-  //     antrim: {
-  //       name: "Antrim",
-  //       province: "Ulster",
-  //     },
-  //     armagh: {
-  //       name: "Armagh",
-  //       province: "Ulster",
-  //     },
-  //     carlow: {
-  //       name: "Carlow",
-  //       province: "Leinster",
-  //     },
-  //     cavan: {
-  //       name: "Cavan",
-  //       province: "Ulster",
-  //     },
-  //     clare: {
-  //       name: "Clare",
-  //       province: "Munster",
-  //     },
-  //     cork: {
-  //       name: "Cork",
-  //       province: "Munster",
-  //     },
-  //     derry: {
-  //       name: "Derry",
-  //       province: "Ulster",
-  //     },
-  //     donegal: {
-  //       name: "Donegal",
-  //       province: "Ulster",
-  //     },
-  //     down: {
-  //       name: "Down",
-  //       province: "Ulster",
-  //     },
-  //     dublin: {
-  //       name: "Dublin",
-  //       province: "Leinster",
-  //     },
-  //     fermanagh: {
-  //       name: "Fermanagh",
-  //       province: "Ulster",
-  //     },
-  //     galway: {
-  //       name: "Galway",
-  //       province: "Connacht",
-  //     },
-  //     kerry: {
-  //       name: "Kerry",
-  //       province: "Munster",
-  //     },
-  //     kildare: {
-  //       name: "Kildare",
-  //       province: "Leinster",
-  //     },
-  //     kilkenny: {
-  //       name: "Kilkenny",
-  //       province: "Leinster",
-  //     },
-  //     laois: {
-  //       name: "Laois",
-  //       province: "Leinster",
-  //     },
-  //     leitrim: {
-  //       name: "Leitrim",
-  //       province: "Connacht",
-  //     },
-  //     longford: {
-  //       name: "Longford",
-  //       province: "Leinster",
-  //     },
-  //     louth: {
-  //       name: "Louth",
-  //       province: "Leinster",
-  //     },
-  //     mayo: {
-  //       name: "Mayo",
-  //       province: "Connacht",
-  //     },
-  //     meath: {
-  //       name: "Meath",
-  //       province: "Leinster",
-  //     },
-  //     monaghan: {
-  //       name: "Monaghan",
-  //       province: "Ulster",
-  //     },
-  //     offaly: {
-  //       name: "Offaly",
-  //       province: "Leinster",
-  //     },
-  //     roscommon: {
-  //       name: "Roscommon",
-  //       province: "Connacht",
-  //     },
-  //     sligo: {
-  //       name: "Sligo",
-  //       province: "Connacht",
-  //     },
-  //     tipperary: {
-  //       name: "Tipperary",
-  //       province: "Munster",
-  //     },
-  //     tyrone: {
-  //       name: "Tyrone",
-  //       province: "Ulster",
-  //     },
-  //     waterford: {
-  //       name: "Waterford",
-  //       province: "Munster",
-  //     },
-  //     westmeath: {
-  //       name: "Westmeath",
-  //       province: "Leinster"
-  //     },
-  //     wexford: {
-  //       name: "Wexford",
-  //       province: "Leinster"
-  //     },
-  //     wicklow: {
-  //       name: "Wicklow",
-  //       province: "Leinster"
-  //     },
-  //   },
-  //
-  //     placemarker: {
-  //       _model: "Placemaker",
-  //       one: {
-  //         latitude: 40,
-  //         longitude: 40,
-  //         religion: "Roman Catholic",
-  //         explorer: "->users.bart",
-  //         counties: "->counties.cork",
-  //       },
-  //       two: {
-  //         latitude: 50,
-  //         longitude: 60,
-  //         religion: "Anglican",
-  //         explorer: "->users.dublin",
-  //
-  //       three: {
-  //         latitude: 70,
-  //         longitude: 80,
-  //         religion: "Muslim",
-  //         explorer: "->users.limerick",
-  //
-  //     },
+
+  counties: {
+    _model: "Counties",
+    antrim: {
+      name: "Antrim",
+      province: "Ulster",
+    },
+    armagh: {
+      name: "Armagh",
+      province: "Ulster",
+    },
+    carlow: {
+      name: "Carlow",
+      province: "Leinster",
+    },
+    cavan: {
+      name: "Cavan",
+      province: "Ulster",
+    },
+    clare: {
+      name: "Clare",
+      province: "Munster",
+    },
+    cork: {
+      name: "Cork",
+      province: "Munster",
+    },
+    derry: {
+      name: "Derry",
+      province: "Ulster",
+    },
+    donegal: {
+      name: "Donegal",
+      province: "Ulster",
+    },
+    down: {
+      name: "Down",
+      province: "Ulster",
+    },
+    dublin: {
+      name: "Dublin",
+      province: "Leinster",
+    },
+    fermanagh: {
+      name: "Fermanagh",
+      province: "Ulster",
+    },
+    galway: {
+      name: "Galway",
+      province: "Connacht",
+    },
+    kerry: {
+      name: "Kerry",
+      province: "Munster",
+    },
+    kildare: {
+      name: "Kildare",
+      province: "Leinster",
+    },
+    kilkenny: {
+      name: "Kilkenny",
+      province: "Leinster",
+    },
+    laois: {
+      name: "Laois",
+      province: "Leinster",
+    },
+    leitrim: {
+      name: "Leitrim",
+      province: "Connacht",
+    },
+    longford: {
+      name: "Longford",
+      province: "Leinster",
+    },
+    louth: {
+      name: "Louth",
+      province: "Leinster",
+    },
+    mayo: {
+      name: "Mayo",
+      province: "Connacht",
+    },
+    meath: {
+      name: "Meath",
+      province: "Leinster",
+    },
+    monaghan: {
+      name: "Monaghan",
+      province: "Ulster",
+    },
+    offaly: {
+      name: "Offaly",
+      province: "Leinster",
+    },
+    roscommon: {
+      name: "Roscommon",
+      province: "Connacht",
+    },
+    sligo: {
+      name: "Sligo",
+      province: "Connacht",
+    },
+    tipperary: {
+      name: "Tipperary",
+      province: "Munster",
+    },
+    tyrone: {
+      name: "Tyrone",
+      province: "Ulster",
+    },
+    waterford: {
+      name: "Waterford",
+      province: "Munster",
+    },
+    westmeath: {
+      name: "Westmeath",
+      province: "Leinster",
+    },
+    wexford: {
+      name: "Wexford",
+      province: "Leinster",
+    },
+    wicklow: {
+      name: "Wicklow",
+      province: "Leinster",
+    },
+  },
+
+  placemarkers: {
+    _model: "Placemarkers",
+    one: {
+      latitude: 40,
+      longitude: 40,
+      religion: "Roman Catholic",
+      explorer: "->users.bart",
+      counties: "->counties.cork",
+    },
+    two: {
+      latitude: 50,
+      longitude: 60,
+      religion: "Anglican",
+      explorer: "->users.marge",
+      counties: "->counties.dublin",
+    },
+    three: {
+      latitude: 70,
+      longitude: 80,
+      religion: "Muslim",
+      explorer: "->users.homer",
+      counties: "->counties.longford",
+    },
+  },
 };
