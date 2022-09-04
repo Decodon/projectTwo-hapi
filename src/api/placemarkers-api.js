@@ -7,7 +7,7 @@ export const placemarkersApi = {
       strategy: "jwt",
     },
     handler: async function (request, h) {
-      const placemarkers = db.placemarkerstore.getAllPlacemarkers();
+      const placemarkers = db.placemarkersStore.getAllPlacemarkers();
       return placemarkers;
     },
   },

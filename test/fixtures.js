@@ -69,3 +69,21 @@ export const testDonations = [
     method: "paypal",
   },
 ];
+
+export const testPlacemarkers = [
+  {
+    latitude: 90,
+    longitude: 90,
+    religion: "cash",
+  },
+  {
+    latitude: 90,
+    longitude: 90,
+    religion: "cash",
+  },
+  {
+    latitude: 90,
+    longitude: 90,
+    religion: "cash",
+  },
+];
