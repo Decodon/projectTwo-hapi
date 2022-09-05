@@ -16,7 +16,7 @@ export const placemarkersApi = {
       strategy: "jwt",
     },
     handler: async function (request, h) {
-      const placemarkers = await db.placemarkerstore.getPlacemarkersByCounties(request.params.id);
+      const placemarkers = await db.placemarkersStore.getPlacemarkersByCounties(request.params.id);
       return placemarkers;
     },
   },
@@ -30,7 +30,7 @@ export const placemarkersApi = {
       if (!counties) {
         return Boom.notFound("No Counties with this id");
       }
-      const placemarkers = await db.placemarkerstore.placemarkers(
+      const placemarkers = await db.placemarkersStore.placemarkers(
         request.payload.latitude,
         request.payload.longitude,
         request.payload.religion,
@@ -46,7 +46,7 @@ export const placemarkersApi = {
       strategy: "jwt",
     },
     handler: async function (request, h) {
-      await db.placemarkerstore.deleteAll();
+      await db.placemarkersStore.deleteAll();
       return { success: true };
     },
   },

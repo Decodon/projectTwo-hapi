@@ -188,22 +188,22 @@ export const seedData = {
   placemarkers: {
     _model: "Placemarkers",
     one: {
-      latitude: 40,
-      longitude: 40,
+      latitude: "40.25",
+      longitude: "40.25",
       religion: "Catholic Church",
       explorer: "->users.bart",
       counties: "->counties.cork",
     },
     two: {
-      latitude: 50,
-      longitude: 60,
+      latitude: "50.54678",
+      longitude: "60.261",
       religion: "Church of Ireland",
       explorer: "->users.marge",
       counties: "->counties.dublin",
     },
     three: {
-      latitude: 70,
-      longitude: 80,
+      latitude: "70.25",
+      longitude: "80",
       religion: "Islam",
       explorer: "->users.homer",
       counties: "->counties.longford",

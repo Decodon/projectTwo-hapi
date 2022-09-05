@@ -3,8 +3,8 @@ import Mongoose from "mongoose";
 const { Schema } = Mongoose;
 
 const placemarkersSchema = new Schema({
-  latitude: Number,
-  longitude: Number,
+  latitude: String,
+  longitude: String,
   religion: String,
   explorer: {
     type: Schema.Types.ObjectId,
