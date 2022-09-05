@@ -11,10 +11,10 @@ export const placemarkersMongoStore = {
     return placemarkers;
   },
 
-  async placemarkers(latitude, longitude, religion, explorer, counties) {
+  async placemarkers(lat, lng, religion, explorer, counties) {
     const newPlacemarkers = new Placemarkers({
-      latitude,
-      longitude,
+      lat,
+      lng,
       religion,
       explorer: explorer._id,
       counties: counties._id,

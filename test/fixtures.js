@@ -72,18 +72,18 @@ export const testDonations = [
 
 export const testPlacemarkers = [
   {
-    latitude: "90.25",
-    longitude: "90.25",
+    lat: "52.160858",
+    lng: "-7.152420",
     religion: "cash",
   },
   {
-    latitude: "90.1",
-    longitude: "90.21",
+    lat: "52.149220",
+    lng: "-6.994620",
     religion: "cash",
   },
   {
-    latitude: "12.54",
-    longitude: "24.64",
+    lat: "52.161290",
+    lng: "-7.231540",
     religion: "cash",
   },
 ];

@@ -30,13 +30,7 @@ export const placemarkersApi = {
       if (!counties) {
         return Boom.notFound("No Counties with this id");
       }
-      const placemarkers = await db.placemarkersStore.placemarkers(
-        request.payload.latitude,
-        request.payload.longitude,
-        request.payload.religion,
-        request.auth.credentials,
-        counties
-      );
+      const placemarkers = await db.placemarkersStore.placemarkers(request.payload.lat, request.payload.lng, request.payload.religion, request.auth.credentials, counties);
       return placemarkers;
     },
   },
