@@ -3,7 +3,6 @@ import Inert from "@hapi/inert";
 import Vision from "@hapi/vision";
 import Cookie from "@hapi/cookie";
 import Handlebars from "handlebars";
-
 import dotenv from "dotenv";
 import path from "path";
 import { fileURLToPath } from "url";
