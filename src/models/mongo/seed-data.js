@@ -197,7 +197,7 @@ export const seedData = {
     two: {
       lat: "52.149220",
       lng: "-6.994620",
-      religion: "Church of Ireland",
+      religion: "Church Of Ireland",
       explorer: "->users.marge",
       counties: "->counties.dublin",
     },
